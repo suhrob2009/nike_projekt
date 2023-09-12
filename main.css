@@ -1,0 +1,284 @@
+:root {
+    --Arial: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    --primary-color: #C1BC45;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+/* HEADER START */
+.header {
+    background: url(./img/Rectangle\ 1.png) no-repeat center center / cover;
+    width: 100%;
+    height: 100vh;
+    background-color:  #F0EAEA;
+
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__img{
+    /* object-fit: cover;
+    cursor: pointer; */
+    cursor: pointer;
+    width: 100px;
+    height: 59px;
+    top: 100px;
+    left: 200px;
+    object-fit: cover;
+}
+
+.header__ul {
+    display: flex;
+}
+
+.header__a {
+    color: #4D4D4D;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.header__b{
+    background: #C1BC45;
+    width: 795px;
+    height: 78px;
+    
+}
+
+.header__b::before {
+    color: #fff;
+    background: #C1BC45;
+}
+.header__links{
+    padding: 40px 20px 20px 20px;
+    display: inline-block;
+    color: #4D4D4D;
+    font-family: var(--Arial);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+.header__div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+}
+
+.header__h1 {
+    color: #C1BC45;
+    font-family: var(--Arial);
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.header__p {
+    color: #4D4D4D;
+    font-family: var(--Arial);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header__text::after {
+    content: " PROWEB";
+    color: #151515;
+    font-family: var(--Arial);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* HEADER END */
+
+
+/* MAIN */
+.main {
+    padding: 100px 0;
+    
+}
+
+.main__cntr {
+    display: flex;
+    gap: 30px;
+}
+
+.main__card {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #fff;
+    max-width: 565px;
+    width: 100%;
+    transition: .4s;
+}
+
+.main__card:hover{
+    border: 4px solid #C1BC45;
+    border-color: rgba(193, 188, 69, 1);
+    background-color: #FFF;
+}
+
+.main__card-title {
+    padding: 50px 0 25px 0;
+    color: #000;
+    font-family: var(--Arial);
+    font-size: 32px;
+    font-weight: 400;
+    transition: .4s;
+}
+
+.main__card-title:hover{
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+.main__card-title::after {
+    content: " Nike Neoline";
+    color: #000;
+    font-family: var(--Arial);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.main__card-text {
+    color: #4D4D4D;
+    font-family: var(--Arial);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    transition: .4s;
+}
+
+
+
+.main__list{
+    width: 589px;
+    height: 190px;
+    left: 615px;
+}
+   
+.main__suhrob {
+     display: inline-block;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    padding: 20px 0 23px 10px ;
+    border: 4px solid #C3C3C3;
+    background: #FFF;
+    transition: .5s;
+    position: relative;
+}
+
+.main__list-item:hover {
+    border: 4px solid #C1BC45;
+    border-color: rgba(193, 188, 69, 1);
+    background-color: #FFF;
+}
+
+.main__h1 {
+    top: 26px;
+    left: 187px;
+    font-family: var(--Arial);
+    font-weight: 700;
+    color: #000000;
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: 36.4px;
+    white-space: nowrap;
+}
+
+.main__list-text {
+    position: absolute;
+    /* text-align: justify; */
+    width: 334px;
+    top: 72px;
+    left: 187px;;
+    font-family: var(--Arial);
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22.4px;
+}
+/* HEADER */
+
+/* FOOTER */
+.footer {
+    background-color: #D9D9D9;
+    
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 100px 0;
+}
+
+.footer__suhrob {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    
+}
+.footer__a {
+    color: red;
+    display: inline-block;
+    color: #4D4D4D;
+    font-family: var(--Arial);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+    position: relative;
+    color: red;
+}
+
+
+.footer__b {
+    display: inline-block;
+    color: #4D4D4D;
+    font-family: var(--Arial);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+    position: relative;
+}
+
+
+
+
+.footer__img {
+    cursor: pointer;
+    width: 100px;
+    height: 59px;
+    top: 100px;
+    left: 200px;
+    object-fit: cover;
+}
+
+/* FOOTER */
